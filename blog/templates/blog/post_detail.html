@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+                 {% block content %}
+                
+                    <div class="post">
+                        <div class="date">
+                            <span class="label label-default">{{ post_detail.published_date }}</span>
+                            
+                        </div>
+                        <h1><a href="">{{ post_detail.title }}</a></h1>
+                        <p>{{ post_detail.text|linebreaksbr }}</p>
+                    </div>
+               
+                 {% endblock content %}
